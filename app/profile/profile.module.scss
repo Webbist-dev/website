@@ -1,0 +1,44 @@
+.timeline {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.position {
+	position: relative;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+
+	h4 {
+		margin-top: 0;
+	}
+
+	&:not(:last-of-type) {
+		&:before {
+			content: '';
+			height: 100%;
+			width: 2px;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0.5rem;
+			background: var(--color-primary);
+		}
+	}
+
+	&:after {
+		content: '';
+		width: 12px;
+		height: 12px;
+		display: block;
+		position: absolute;
+		left: -5px;
+		top: 0.5rem;
+		border-radius: 10px;
+		background: var(--color-primary);
+	}
+}
+
+.content {
+	max-width: 60%;
+}

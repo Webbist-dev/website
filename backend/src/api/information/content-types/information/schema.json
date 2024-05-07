@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "informations",
+  "info": {
+    "singularName": "information",
+    "pluralName": "informations",
+    "displayName": "Information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.timeline"
+    },
+    "experience": {
+      "type": "richtext"
+    },
+    "profile": {
+      "type": "richtext"
+    }
+  }
+}

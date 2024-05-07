@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start:strapi": "cd backend; yarn start",
+    "develop:strapi": "cd backend; yarn develop",
+    "build:strapi": "cd backend; yarn && yarn build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.1.7",
+    "next": "14.2.2",
+    "next-seo": "^6.5.0",
+    "path": "^0.12.7",
+    "prismjs": "^1.29.0",
+    "qs": "^6.12.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "react-markdown": "^9.0.1",
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "eslint": "^8",

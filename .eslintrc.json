@@ -1,3 +1,94 @@
 {
-  "extends": "next/core-web-vitals"
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"next",
+		"next/core-web-vitals",
+		"eslint:recommended"
+	],
+	"globals": {
+		"React": "readonly",
+		"JSX": true
+	},
+	"ignorePatterns": [
+		"**/*.css",
+		"**/*.scss"
+	],
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"jsx-a11y/media-has-caption": 0,
+		"react/react-in-jsx-scope": 0,
+		"jsx-a11y/anchor-is-valid": 0,
+		"arrow-spacing": [
+			"error",
+			{
+				"before": true,
+				"after": true
+			}
+		],
+		"block-spacing": [
+			"error",
+			"always"
+		],
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		"eol-last": [
+			"error",
+			"always"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-mixed-spaces-and-tabs": "error",
+		"no-multiple-empty-lines": "error",
+		"no-trailing-spaces": "error",
+		"no-unused-vars": [
+			1,
+			{
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
+		],
+		"semi": [
+			"error",
+			"never"
+		],
+		"space-before-blocks": [
+			"error",
+			"always"
+		],
+		"space-before-function-paren": [
+			"error",
+			"never"
+		],
+		"space-in-parens": [
+			"error",
+			"never"
+		],
+		"no-console": [
+			2,
+			{
+				"allow": [
+					"warn",
+					"error"
+				]
+			}
+		]
+	}
 }

@@ -1,0 +1,28 @@
+.navigation {
+	padding: 0 4rem;
+}
+
+.ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+
+	li {
+		margin-left: 1rem;
+	}
+}
+
+.link {
+	padding: 1rem 3rem;
+	border-radius: 6px 6px 0 0;
+	background-color: #121c2c;
+	color: #fff;
+	font-weight: 300;
+	display: block;
+}
+
+.active {
+	background-color: var(--color-background);
+}

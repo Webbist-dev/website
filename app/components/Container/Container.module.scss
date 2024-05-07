@@ -1,0 +1,91 @@
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+
+	@media (min-width: 1441px) {
+		&.vertical-padding-none {
+			padding: 0;
+		}
+
+		&.vertical-padding-both {
+			padding: 6.4rem 0;
+		}
+
+		&.vertical-padding-top {
+			padding-top: 6.4rem;
+		}
+
+		&.vertical-padding-bottom {
+			padding-bottom: 6.4rem;
+		}
+	}
+
+	@media (min-width: 1025px) and (max-width: 1440px) {
+		&:not(.full) {
+			padding-left: 6.4rem;
+			padding-right: 6.4rem;
+		}
+
+		&.vertical-padding-none {
+			padding: 0;
+		}
+
+		&.vertical-padding-both {
+			padding-top: 6.4rem;
+			padding-bottom: 6.4rem;
+		}
+
+		&.vertical-padding-top {
+			padding-top: 6.4rem;
+		}
+
+		&.vertical-padding-bottom {
+			padding-bottom: 6.4rem;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		&:not(.full) {
+			padding-left: 3.2rem;
+			padding-right: 3.2rem;
+		}
+
+		&.vertical-padding-none {
+			padding: 0;
+		}
+
+		&.vertical-padding-both {
+			padding-top: 3.2rem;
+			padding-bottom: 3.2rem;
+		}
+
+		&.vertical-padding-top {
+			padding-top: 3.2rem;
+		}
+
+		&.vertical-padding-bottom {
+			padding-bottom: 3.2rem;
+		}
+	}
+
+	&.tiny {
+		max-width: 600px;
+	}
+
+	&.narrow {
+		max-width: 700px;
+	}
+
+	&.medium {
+		max-width: 960px;
+	}
+
+	&.wide {
+		max-width: 1440px;
+	}
+
+	&.full {
+		max-width: 1920px;
+	}
+}

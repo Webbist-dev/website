@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_timelines",
+  "info": {
+    "displayName": "timeline",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

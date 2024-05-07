@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_codeblocks",
+  "info": {
+    "displayName": "codeblock"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "text"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "SASS"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

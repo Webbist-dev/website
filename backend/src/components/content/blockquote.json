@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_content_blockquotes",
+  "info": {
+    "displayName": "blockquote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

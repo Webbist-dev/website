@@ -1,0 +1,99 @@
+:root {
+  --color-background: #2B3446;
+  --color-primary: #3D7FFF;
+  --color-text: #EFF4FF;
+  --color-button: #171717;
+  --color-subtitle: #171717;
+  --color-border: #171717;
+  --color-box: #171717;
+  --color-logo: #171717;
+}
+
+[data-theme='dark'] {
+  --color-background: #171717;
+  --color-primary: #171717;
+  --color-text: #171717;
+  --color-button: #171717;
+  --color-subtitle: #171717;
+  --color-border: #171717;
+  --color-box: #171717;
+  --color-logo: #171717;
+}
+
+html {
+	font-size: 62.5%; /* Now 10px = 1rem! */
+	scroll-behavior: smooth;
+	background: #fff;
+}
+
+body {
+	font-size: 16px; /* px fallback */
+	font-size: 1.6rem; /* default font-size for document */
+	background: linear-gradient(171.47deg, #242c3a 41.83%, #293141 99.17%);
+}
+
+html,
+body {
+	color: var(--color-text);
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-dm-mono), monospace;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 600;
+	color: var(--color-primary);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.layout main {
+	flex-grow: 1;
+}
+
+.main {
+	padding: 4rem;
+	margin: 0 4rem 4rem;
+	background: var(--color-background);
+}
+
+.heading {
+	padding: 0 4rem;
+	margin: 4rem 4rem 0;
+}
+
+.h1 {
+	font-size: 26px;
+	line-height: 20px;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.h2 {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.h3 {
+	text-transform: uppercase;
+}
+
+.richtext p {
+	margin-top: 0;
+	font-weight: 300;
+}

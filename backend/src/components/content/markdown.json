@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_content_markdowns",
+  "info": {
+    "displayName": "markdown"
+  },
+  "options": {},
+  "attributes": {
+    "copy": {
+      "type": "richtext"
+    }
+  }
+}
