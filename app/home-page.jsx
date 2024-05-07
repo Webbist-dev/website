@@ -21,7 +21,19 @@ export default function Homepage({ content }) {
 
 				<h3>Latest ramblings</h3>
 
-				
+				<div>
+					{content.articles.map((article) => (
+						<div key={article.id}>
+							<h2>
+								<Link href={`/articles/${article.attributes.slug}`}>
+									{article.attributes.title}
+								</Link>
+							</h2>
+							<p>{article.attributes.excerpt}</p>
+							<Tags tags={article.attributes.tags.data} />
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	)
